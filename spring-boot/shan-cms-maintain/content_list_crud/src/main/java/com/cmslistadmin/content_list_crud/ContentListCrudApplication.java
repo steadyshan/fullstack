@@ -1,4 +1,7 @@
-/* Application to add automation to updating the content of the 'content-management-system' CMS
+/* SHANTANU TRAINING DEVELOPMENT FOR PERSONAL PROJECTS (STDFPP)
+ * ============================================================
+ * Application to add automation to updating the content of the 'content-management-system' CMS
+ * 
  * Main Application - contextual functionality
  * ===========================================
  * 1 'content-management-system' is the angular web application written by me to upload, host and display my sketches
@@ -26,8 +29,21 @@
  * c. THE INTENT OF THIS APP IS TO AUTOMATE THIS PROCESS
  * + This webservice is the functional backend, also as of June 10 2023, a dB free layer and will be integrated into the 
  *   Front End (mostly an Angular App) when that is ready
+ * 
+ * Components/Categories
+ * Each will mostly follow a pattern of a <category>CRUD.java, and a <category>.java file 
+  	+ optionally,  one or more <category>JSON.java files.
+ * Note: Separation of concerns is (also) because besides a layer to expose the API through REST, INTERNALLU
+ * some of the <category>.java objects would need to call one another
+ * Files and Listings - FilesListingCRUD.java, FilesListing.java
+ * Images and entries in CMS ImageListCRUD.java, ImageList.java, ImageListJSON.java
+ * MenuTree - MenuTreeCRUD.java
+ * June 20-23 2023
+ * Successful full stack implementation of moving file from 'Downloads' to a folder under 'all-images'.
+ * Hard coded
  * - Shantanu Gadkari
  */
+///Users/shantanu/Documents/GitHub/java/utilities/cms-maint/ContentUpdate.java
 package com.cmslistadmin.content_list_crud;
 
 import org.springframework.boot.SpringApplication;
