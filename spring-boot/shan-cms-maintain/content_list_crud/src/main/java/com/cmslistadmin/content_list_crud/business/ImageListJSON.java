@@ -18,6 +18,7 @@ public class ImageListJSON {
     public String dateUploaded ;
     public String rating;
     public String  ratingYear;
+    public String  duplicate;
     public String  iteration1FullFileName1;
     public String  iteration1description1;
     public String  iteration2FullFileName1;

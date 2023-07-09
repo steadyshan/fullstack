@@ -102,9 +102,9 @@ public class ImageList {
     public void AddListItem(String fileToUpdate, String[] stringifiedJSON , String folderName) {
         String keyValues[][]=  {
             {"public","allImageList:","ImageElement[]"},
-            {"folder:", folderName },
+         /* *    {"folder:", folderName },
             {"themeSummary:"},
-            {""},
+            {""},*/
             { "files:", "["}
         };
         ImageListFields[] patterns = new ImageListFields[5];
