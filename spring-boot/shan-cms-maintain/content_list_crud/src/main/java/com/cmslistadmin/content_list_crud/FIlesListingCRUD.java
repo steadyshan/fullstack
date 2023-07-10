@@ -48,4 +48,11 @@ import org.springframework.http.MediaType ;
                             moveDetails.destFileName) ;   
         return  "yes"; //updateImageJSON.processImage(entity);
     }
+
+     @PostMapping( path = "/append" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public String  Append(@RequestBody String[] fileAndLines) {
+        FilesListing writeFile = new FilesListing();
+        writeFile.writeLines(fileAndLines ) ;   
+        return  "yes"; //updateImageJSON.processImage(entity);
+    }
 }

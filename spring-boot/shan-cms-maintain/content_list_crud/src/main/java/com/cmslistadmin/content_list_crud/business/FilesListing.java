@@ -36,4 +36,13 @@ public class FilesListing {
     
         return fileMoved;
     }
+    public boolean writeLines(String[] fileAndLines){
+        String fileName = fileAndLines[0];
+        ArrayList<String> fileLines = new ArrayList<String>();
+        for (int i = 1; i < fileAndLines.length ;i++) {
+            fileLines.add(fileAndLines[i]);
+        }
+        FileHandler.addLinestoFile(fileName, fileLines, -1);
+        return true ;
+    }
 }
